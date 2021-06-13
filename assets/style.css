@@ -190,9 +190,7 @@ justify-content: center;
 .imgPad{
     box-shadow: 0 1px 4px rgb(218, 108, 212);
     border-radius: 5px;
-   
-    width: 1200px;
-   max-width: 80%;
+  width: 100%;
 }
 
 .imgPadB{
