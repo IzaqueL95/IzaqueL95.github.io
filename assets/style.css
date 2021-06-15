@@ -245,6 +245,11 @@ justify-content: center;
         height: 345px;
     }
 
+    .imgPad{
+        width: 400px;
+        height: 120px;
+    }
+
 }
 
 
