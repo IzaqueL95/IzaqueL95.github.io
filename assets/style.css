@@ -180,9 +180,8 @@ justify-content: center;
 
 
 .img {
-    display: block;
-   border-radius: 1%;
-    max-width:25%;
+    width: 100%;
+  
 }
 
 .imgPad{
@@ -263,11 +262,11 @@ justify-content: center;
 
 
 @media only screen and (max-width: 1024px) and (min-width: 200px) {
-    /*.img {
-        display: none;
+    .img {
+        
         border-radius: 1%;
-        max-width:25%;
-    }*/
+        max-width:40%;
+    }
 
     .about{ flex-direction: column; align-items: center;}
 
