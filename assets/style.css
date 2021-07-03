@@ -180,7 +180,8 @@ justify-content: center;
 
 
 .img {
-    width: 90%;
+    max-width: 100%;
+    height: auto;
     
   
 }
@@ -264,8 +265,7 @@ justify-content: center;
 
 @media only screen and (max-width: 1024px) and (min-width: 200px) {
     .img {
-        width: 50%;
-        height: 50%;
+        max-width: 80%;
     }
 
     .about{ flex-direction: column; align-items: center;}
