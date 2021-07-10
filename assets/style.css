@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@700&display=swap');
 
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     
     background-color: rgb(24, 23, 23);
@@ -36,13 +40,41 @@ a {
     color: rgb(255, 255, 255);
 }
 
+nav .botao{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5px;
+    margin-right: 8px;
+    height: 40px ;
+    width: 50px;
+    background-color: rgb(233, 233, 233);
+}
+
+nav .botaodark{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5px;
+    height: 40px ;
+    width: 50px;
+    background-color: rgb(63, 63, 63);
+}
+
 
 .header{
     position: sticky;
     top: 0;
-    background: rgba(44, 44, 44, 0.990); /*cor que torna a barra transparente*/
+    background: rgba(44, 44, 44, 0.829); /*cor que torna a barra transparente/*
+    /*box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;*/
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%);
+    -webkit-backdrop-filter: blur( 10.0px );
+    -moz-backdrop-filter: blur( 10.0px );
+    -ms-backdrop-filter: blur( 10.0px );
+    -o-backdrop-filter: blur( 10.0px );
+    backdrop-filter: blur( 10.0px );
     overflow: hidden;
-    
+    height: 22px;
    justify-content: center;
     display: flex;
     align-items: center;
@@ -69,6 +101,11 @@ a {
     width: 40px;
     height: 40px;
     padding: 10px;
+}
+
+.active{
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
 }
 
 .Title {
@@ -136,8 +173,8 @@ justify-content: center;
 }
 
 .SocialIcon {
-    
-    background-color: rgb(15, 15, 15);;
+    font-size: 60px;
+    background-color:rgb(59, 59, 59) ;
     display: flex;
     justify-content: center;
     margin-top: 20px;
@@ -161,7 +198,16 @@ justify-content: center;
     margin-top: 15px;
     font-size: calc(0.5em + 1vw);
 }
-
+.Font{
+    font-size: 80px;
+    margin-top: 60px;
+    
+    transition: all .2s ease-in-out;
+}
+.Font:hover{
+    opacity: 0.5;
+    
+}
 .izq{
     
     font-size: calc(0.3em + 1vw);
@@ -171,7 +217,7 @@ justify-content: center;
     font-size: calc(0.2em + 1vw); 
 }
 .Text2{
-    margin-top: 100px;
+    margin-top: 70px;
     display: flex;
     justify-content: center;
     color: azure;
@@ -259,7 +305,21 @@ justify-content: center;
     color: rgba(14, 13, 13, 0.836);
 }
 
+.fa-github-alt{
+    
+    
+    color: rgb(14, 13, 13);
+}
 
+.fa-linkedin{
+    color: rgb(14, 13, 13);
+    margin-left: 10px;
+}
+
+button{
+    border: none;
+    border-radius: 2px;
+}
 
 
 
@@ -288,5 +348,4 @@ justify-content: center;
 
 
 }
-
 
