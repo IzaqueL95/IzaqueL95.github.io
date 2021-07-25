@@ -2,6 +2,7 @@
 
 html{
     scroll-behavior: smooth;
+    -webkit-scroll-behavior: smooth;
 }
 
 body{
@@ -65,17 +66,17 @@ nav .botaodark{
 .header{
     position: sticky;
     top: 0;
-    background: rgba(44, 44, 44, 0.829); /*cor que torna a barra transparente/*
-    /*box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;*/
-    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%);
+    background: rgba(44, 44, 44, 0.829); /*cor que torna a barra transparente*/
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    /*box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%);*/
     -webkit-backdrop-filter: blur( 10.0px );
     -moz-backdrop-filter: blur( 10.0px );
     -ms-backdrop-filter: blur( 10.0px );
     -o-backdrop-filter: blur( 10.0px );
-    backdrop-filter: blur( 10.0px );
+    backdrop-filter: blur( 20.0px );
     overflow: hidden;
     height: 22px;
-   justify-content: center;
+    justify-content: center;
     display: flex;
     align-items: center;
     padding: 20px;
@@ -108,6 +109,15 @@ nav .botaodark{
     background-color: rgb(255, 255, 255);
 }
 
+.activeMenu{
+    background: rgba(255, 255, 255, 0.829);
+    backdrop-filter: blur( 20.0px);
+}
+
+.activeMenuItem{
+    color: black;
+}
+
 .Title {
 font-size: calc(0.9em + 1vw);
 
@@ -131,8 +141,10 @@ justify-content: center;
    background: radial-gradient(circle, rgba(0,0,0,0.7595413165266106) 0%, rgba(52,52,52,1) 89%);    
     border-radius: 7px;
     width: 1740px;
+    height: 460px;
     display: flex;
     justify-content: center;
+    align-items: center;
     flex-direction: row;
     padding: 20px;
     transition: 0.4s;
@@ -216,8 +228,18 @@ justify-content: center;
     color: darkkhaki;
     font-size: calc(0.2em + 1vw); 
 }
+.clasEgi{
+    padding-top: 15px;
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    color: azure;
+    font-size: clamp(1em, 1em + 1vw, 8em);
+}
+
 .Text2{
-    margin-top: 70px;
+    padding-top: 15px;
+    margin-top: 30px;
     display: flex;
     justify-content: center;
     color: azure;
@@ -226,8 +248,8 @@ justify-content: center;
 
 
 .img {
-    width: 500px;
-    height: 500px;
+    width: 400px;
+    height: 400px;
     
   
 }
@@ -259,6 +281,9 @@ justify-content: center;
     display: flex;
     justify-content: center;
     width: 1900px;
+    
+        
+    
 }
 
 .Folha{
@@ -333,8 +358,8 @@ button{
     .about{ flex-direction: column; align-items: center;}
 
     .Folha{
-        width: 220px;
-        height: 430px;
+        width: 330px;
+        height: 360px;
     }
 
     .imgPad{
@@ -344,6 +369,20 @@ button{
     .as{
         width: 220px;
         font-size: 40px;
+    }
+    
+    .ThisIMG{
+        width: 70px;
+        height: 70px;
+        margin-top: 60px;
+        margin-bottom: 50px;
+    }
+
+    .Font{
+        font-size: 60px;
+        margin-top: 60px;
+        margin-bottom: 50px;
+        
     }
 
 
