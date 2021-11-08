@@ -1,125 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@700&display=swap');
+
 html{
     scroll-behavior: smooth;
+    -webkit-scroll-behavior: smooth;
 }
 
-.first-image-div {
-    background-image: url('/assets/img/Hero-dk.png');
-    max-width: 100%;
-    background-repeat: no-repeat;
-    display: block;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-
-.opaci{
-    opacity: 0;
-    transition: .8s;
-}
-
-.h1-a {
-    margin-top: 7px;
-    font-family: Montserrat;
-    font-style: normal;
-    font-size: 82px;
-    line-height: 100px;
-    letter-spacing: -0.02em;
-    color: #FFFFFF;
-}
-.more{
-    cursor: pointer;
-    position: absolute;
-    transform: rotate(+90deg);
-    margin-left: 700px;
-    margin-top: 200px;
-    
-}
-.vazia{
-    opacity: 0;
-    cursor: auto;
-}
-.opac{
-    opacity: 0;
-    position: absolute;
-}
-.opacChange{
-    cursor: pointer;
-    opacity: 100;
-    margin-top: -40px;
-    color: black;
-}
-.img-f {
-    position: absolute;
-    width: 370px;
-    margin-top: 200px;
-    margin-left: -25px;
-    opacity: 0;
-    transition: all 0.4s ease-in-out;
-}
-
-.img-f:hover {
-    width: 450;
-    opacity: 100;
-}
-
-.button-first {
-    margin-top: 80px;
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 28px;
-    width: 252px;
-    height: 54px;
-    color: white;
-    border-style: solid;
-    border: 2px solid rgb(255, 255, 255);
-    background-color: transparent;
-}
-
-.first-text {
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 18px;
-    line-height: 28px;
-    letter-spacing: -0.02em;
-    color: #FFFFFF;
-}
-
-.h1-g {
-    margin-top: 70px;
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: 200;
-    font-size: 82px;
-    line-height: 100px;
-    letter-spacing: -0.02em;
-    color: #FFFFFF;
-    transition: .5;
-}
-
-.first-image {
-    width: 1925px;
-}
-
-body {
+body{
     
     background-color: rgb(24, 23, 23);
 }
-
-body,
-ul,
-li,
-p {
+body, ul, li, p {
     margin: 0px;
     padding: 0px;
     list-style: none;
     font-size: 1.2rem;
     font-family: 'PT Sans', sans-serif;
+    
 }
+
+body::-webkit-scrollbar {
+    width: 18px;               /* width of the entire scrollbar */
+  }
+  
+  body::-webkit-scrollbar-track {
+    background: rgb(39, 38, 37);        /* color of the tracking area */
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background-color: rgb(15, 15, 15);    /* color of the scroll thumb */
+         /* roundness of the scroll thumb */
+    
+  }
+
+
+ 
 
 
 a {
@@ -127,693 +41,350 @@ a {
     color: rgb(255, 255, 255);
 }
 
-.a2 {
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 17px;
-    line-height: 28px;
-    letter-spacing: -0.02em;
-}
-.mr{
-    font-family: Montserrat;
-    position: absolute;
-    margin-top: 50px;
-    margin-left: 117px;
-}
-.logo {
-    background-image: url('/assets/img/Logo-m.png');
-    margin-top: 10px;
-    height: 40px;
-    background-repeat: no-repeat;
-    margin-right: 690px;
-    opacity: 100;
+nav .botao{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5px;
+    margin-right: 8px;
+    height: 40px ;
+    width: 50px;
+    background-color: rgb(233, 233, 233);
 }
 
-.logo:hover {
-    opacity: 0;
+nav .botaodark{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5px;
+    height: 40px ;
+    width: 50px;
+    background-color: rgb(63, 63, 63);
 }
 
-.img-m {
-    background-image: url('/assets/img/Logo-m.png');
-    position: absolute;
-    background-repeat: no-repeat;
-    width: 150px;
-    margin-right: 1535px;
-    height: 50px;
-    opacity: 100;
-    transition: all 0.3s ease-in-out;
-}
 
-.img-m:hover {
-    background-image: url('/assets/img/Logo-rodape.png');
-    width: 450;
-    opacity: 100;
-}
-
-/* INICIO CLASSES QUE MANIPULAM A DOBRA DOS CARDS*/
-.corte{
-    position: absolute;
-    margin-top: 196px;
-    margin-left: 152px;
-    opacity: 0;
-    transition: .5s;
-}
-.corte-show{
-    position: absolute;
-    margin-top: 196px;
-    margin-left: 152px;
-    opacity: 100;
-}
-.corte2{
-    position: absolute;
-    margin-top: 196px;
-    margin-left: 413px;
-    opacity: 0;
-    transition: .5s;
-}
-.corte2-show{
-    position: absolute;
-    margin-top: 196px;
-    margin-left: 413px;
-    opacity: 100;
-}
-
-.corte3{
-    position: absolute;
-    margin-top: 196px;
-    margin-left: 672px;
-    opacity: 0;
-    transition: .5s;
-}
-.corte3-show{
-    position: absolute;
-    margin-top: 196px;
-    margin-left: 672px;
-    opacity: 100;
-}
-.corte4{
-    position: absolute;
-    margin-top: 526px;
-    margin-left: 152px;
-    opacity: 0;
-    transition: .5s;
-}
-.corte4-show{
-    position: absolute;
-    margin-top: 526px;
-    margin-left: 152px;
-    opacity: 100;
-}
-
-.corte5{
-    position: absolute;
-    margin-top: 526px;
-    margin-left: 413px;
-    opacity: 0;
-    transition: .5s;
-}
-.corte5-show{
-    position: absolute;
-    margin-top: 526px;
-    margin-left: 413px;
-    opacity: 100;
-}
-
-.corte6{
-    position: absolute;
-    margin-top: 526px;
-    margin-left: 672px;
-    opacity: 0;
-    transition: .5s;
-}
-.corte6-show{
-    position: absolute;
-    margin-top: 526px;
-    margin-left: 672px;
-    opacity: 100;
-}
-/* FIM CLASSES QUE MANIPULAM A DOBRA DOS CARDS*/
-
-/*INICIO DA CLASSE HEADER E SEUS COMPONENTES*/
-.header {
-    margin-left: -1px;
-    border-style: groove;
-    border-width: 0.2px;
-    width: 1862px;
-    position: absolute;
-    background: rgba(24, 24, 24, 0.39);
-    height: 50px;
-    justify-content: end;
+.header{
+    position: sticky;
+    top: 0;
+    background: rgba(44, 44, 44, 0.829); /*cor que torna a barra transparente*/
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    /*box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%);*/
+    -webkit-backdrop-filter: blur( 10.0px );
+    -moz-backdrop-filter: blur( 10.0px );
+    -ms-backdrop-filter: blur( 10.0px );
+    -o-backdrop-filter: blur( 10.0px );
+    backdrop-filter: blur( 20.0px );
+    overflow: hidden;
+    height: 22px;
+    justify-content: center;
     display: flex;
     align-items: center;
     padding: 20px;
 }
 
-.button-menu {
-    margin-right: 180px;
-    margin-left: 30px;
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 17px;
-    line-height: 28px;
-    width: 141px;
-    height: 49px;
-    color: white;
-    border-style: solid;
-    border: 2px solid rgb(255, 255, 255);
-    background-color: transparent;
-}
-
-.menuS {
+.menuS{
     display: flex;
+   
 }
 
-.menuS,
-li {
+.menuS, li {
+     
     margin-left: 10px;
 }
 
 .menuS li a {
+    
     display: block;
     padding: 10px;
-}
-/*FIM DA CLASSE HEADER E SEUS COMPONENTES*/
 
-/*INICIO DAS CLASSES QUE APLICAM O FUNDO AO PASSAR O MOUSE NAS CATEGORIAS ÁREA EXT, MEZANINO, BAR, MURAL INSTA.. MÚSICA AO..*/
-.back-hov {
-    background-image: url('/assets/img/Rectangle\ 24.png');
-    transition: .4s;
 }
-
-.back-hov-ext {
-    background-image: url('/assets/img/are-ext.PNG');
-    transition: .4s;
+.tm-social-icon {
+    width: 40px;
+    height: 40px;
+    padding: 10px;
 }
 
-.back-hov-mez {
-    background-image: url('/assets/img/mez.PNG');
-    transition: .4s;
+.active{
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
 }
 
-.back-hov-bar {
-    background-image: url('/assets/img/bar.PNG');
-    transition: .4s;
+.activeMenu{
+    background: rgba(255, 255, 255, 0.829);
+    backdrop-filter: blur( 20.0px);
 }
 
-.back-hov-mural {
-    background-image: url('/assets/img/mural.PNG');
-    transition: .4s;
+.activeMenuItem{
+    color: black;
 }
 
-.back-hov-music {
-    background-image: url('/assets/img/music.PNG');
-    transition: .4s;
-}
-.back-hov-more {
-    background-image: url('/assets/img/Capturar2.PNG');
-    background-repeat: no-repeat;
-    transition: .4s;
-}
-/*FIM DAS CLASSES QUE APLICAM O FUNDO AO PASSAR O MOUSE NAS CATEGORIAS ÁREA EXT, MEZANINO, BAR, MURAL INSTA.. MÚSICA AO..*/
+.Title {
+font-size: calc(0.9em + 1vw);
 
-
-/*INICIO DAS CLASSES QUE POSSUEM O SOBRE NÓS E OS QUADROS*/
-.mr-div {
-    background-image: url('/assets/img/image\ 5.png');
-    height: 83vh;
-    width: 99vw;
-    display: grid;
-    grid-template-columns: 1149px 100px;
-}
-
-.sec-text {
-    display: grid;
-    grid-template-columns: 953px 950px;
-    margin-top: -5px;
+color: whitesmoke;
+display: flex;
+justify-content: center;
 
 }
 
-.button-quad {
-    margin-top: 30px;
-    margin-left: 250px;
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 28px;
-    width: 170px;
-    height: 54px;
+.texbouttA{
     color: white;
-    border-style: solid;
-    border: 2px solid rgb(255, 255, 255);
-    background-color: transparent;
+    padding: 20px;
 }
 
-.tex-quad {
-    margin-left: 250px;
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 18px;
-    line-height: 28px;
-    letter-spacing: -0.02em;
-    color: #FFFFFF;
-}
-
-.h2-quad {
-    margin-top: 130px;
-    margin-left: 250px;
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: 200;
-    font-size: 52px;
-    line-height: 63px;
-    letter-spacing: -0.02em;
-    color: #FFFFFF;
-}
-
-.sec-quadros {
-    display: grid;
-    grid-template-columns: 500px 400px;
-}
-
-.first-quad {
-    filter: brightness(50%);
-    margin-top: 50px;
-    transition: 0.9s;
-}
-
-.first-quad:hover {
-    filter: brightness(200%);
-}
-
-.second-quad {
-    margin-top: 130px;
-}
-/*FIM DAS CLASSES QUE POSSUEM O SOBRE NÓS E OS QUADROS*/
-
-/*INICIO DAS CLASSES QUE POSSUEM CARDS DO CARDAPIO*/
-.sec-prod {
-    background-image: url('/assets/img/Group\ 9.png');
-    height: 115vh;
-    display: grid;
-    grid-template-columns: 953px 950px;
-    margin-top: -5px;
-}
-
-.img-ret {
-    margin-top: 50px;
-}
-
-.img-taca{
-    position: absolute;
-    margin-left: -3700px;
-    margin-top: 85px;
-    transition: .8s;
-}
-
-.img-taca-show{
-    position: absolute;
-    margin-left: -370px;
-    margin-top: 85px;
-    transition: .4s;
-}
-
-.img-prato{
-    position: absolute;
-    margin-left: -3700px;
-    margin-top: 85px;
-    transition: .8s;
-}
-
-.img-prato-show{
-    position: absolute;
-    margin-left: -320px;
-    margin-top: 320px;
-    transition: .4s;
-}
-
-.h2-card {
-    margin-top: 100px;
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: 200;
-    font-size: 52px;
-    line-height: 63px;
-    letter-spacing: -0.02em;
-    color: #FFFFFF;
-}
-
-.p-card {
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 18px;
-    line-height: 28px;
-    letter-spacing: -0.02em;
-    color: #FFFFFF;
-}
-
-.cards-food {
-    margin-top: 50px;
-    display: grid;
-    grid-template-columns: 60px 60px 60px;
-    grid-template-rows: 80px;
-    column-gap: 200px;
-    row-gap: 250px;
-}
-
-.button-food {
-    margin-top: -1000px;
-    margin-left: -110px;
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 28px;
-    width: 252px;
-    height: 54px;
-    color: white;
-    border-style: solid;
-    border: 2px solid rgb(255, 255, 255);
-    background-color: transparent;
-}
-
-/*FIM DAS CLASSES QUE POSSUEM CARDS DO CARDAPIO*/
-
-.h1-text {
-    margin-top: 80px;
-    margin-left: 120px;
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: 200;
-    font-size: 52px;
-    letter-spacing: -0.02em;
-}
-
-.p-text {
-    margin-top: 40px;
-    margin-left: 120px;
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 18px;
-    line-height: 28px;
-}
-
-.h2-text {
-    margin-top: 70px;
-    margin-left: 120px;
-}
-
-
-.b {
-    background-color: #dcdcdc;
-}
-
-.font-style {
-    color: #BDBDBD;
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 44px;
+.about{
+   color: rgb(255, 255, 255);  
+   background: rgb(0,0,0);
+   background: rgb(0,0,0);
+   background: rgb(0,0,0);
+   background: rgb(0,0,0);
+   background: radial-gradient(circle, rgba(0,0,0,0.7595413165266106) 0%, rgba(52,52,52,1) 89%);    
+    border-radius: 7px;
+    width: 1740px;
+    height: 460px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    padding: 20px;
     transition: 0.4s;
 }
 
-.font-style:hover {
-    color: #111111;
-    cursor: pointer;
+
+.textAbout{
+    padding: 9px;
+    
+    
 }
 
+.center{
+    
+    display: flex;
+    justify-content: center;
+}
+
+/*.bg_video{
+    
+	position: fixed; 
+	right: 0; 
+	bottom: 0;
+	min-width: 100%; 
+	min-height: 100%;
+	width: auto; 
+	height: auto; 
+	z-index: -1000;
+	background: url(images/torre.jpg) no-repeat;
+	background-size: cover; 
+}
+*/
+
+.textStart{
+    font-size: calc(0.3em + 1vw);
+    padding: 20px;
+    color: white;
+}
+
+.SocialIcon {
+    font-size: 60px;
+    background-color:rgb(59, 59, 59) ;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    transition: all .4s ease-in-out;
+}
+
+
+.socialStyle{
+    margin-top: 40px;
+    margin-bottom: 10px;
+    transition: all .4s ease-in-out;
+
+}
+
+.socialStyle:hover{
+    opacity: 0.5;
+}
+
+.mTOP{
+    color: cornflowerblue;
+    margin-top: 15px;
+    font-size: calc(0.5em + 1vw);
+}
+.Font{
+    font-size: 80px;
+    margin-top: 60px;
+    
+    transition: all .2s ease-in-out;
+}
+.Font:hover{
+    opacity: 0.5;
+    
+}
+.izq{
+    
+    font-size: calc(0.3em + 1vw);
+}
+.izq2{
+    color: darkkhaki;
+    font-size: calc(0.2em + 1vw); 
+}
+.clasEgi{
+    padding-top: 15px;
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    color: azure;
+    font-size: clamp(1em, 1em + 1vw, 8em);
+}
+
+.Text2{
+    padding-top: 15px;
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    color: azure;
+    font-size: clamp(1em, 1em + 1vw, 8em);
+}
 
 
 .img {
-    width: 370px;
-    margin-left: 160px;
-    margin-top: -155px;
-    opacity: 0;
-    transition: all 0.7s ease-in-out;
+    width: 400px;
+    height: 400px;
+    
+  
 }
 
-.img:hover {
-    width: 450;
-    opacity: 100;
+.imgPad{
+    box-shadow: 0 1px 4px rgb(218, 108, 212);
+    border-radius: 5px;
+    max-width: 80%;
+    max-height: 30%;
+  
 }
 
-.test {
-    margin-top: -13px;
+.imgPadB{
+    box-shadow: 0 1px 4px rgb(218, 108, 212);
+    border-radius: 5px;
+    
+    max-width: 80%;
+    max-height: 30%;
+    
 }
 
-.img-c {
-    width: 370px;
-    margin-left: -160px;
-    margin-top: -200px;
-    opacity: 0;
-    transition: all 0.7s ease-in-out;
-}
-
-.img-c:hover {
-    width: 450;
-    opacity: 100;
-}
-
-
-
-.insta-vet{
-    position: absolute;
-    margin-left: -19px;
-    margin-top: 12px;
-    width: 67px;
-    opacity: 0;
-    transition: .4s;
-}
-.insta-vet:hover{
-    position: absolute;
-    width: 67px;
-    opacity: 100;
-}
-
-.insta-ve{
-    margin-left: -16px;
-    margin-right: 3px;
-    margin-top: -68px;
-    width: 67px;
-    opacity: 0;
-    transition: .4s;
-}
-.insta-ve:hover{
-    width: 67px;
-    opacity: 100;
-}
-
-.cop {
-    margin-left: 200px;
-    margin-right: 638px;
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 17px;
-    line-height: 28px;
-    letter-spacing: -0.02em;
-    color: #FFFFFF;
-}
-
-.final-foot {
+.portPosition{
+   
     display: flex;
-    margin-bottom: 15px
+    justify-content: center;
 }
 
-.img-vet-show{
-    position: absolute;
-    margin-left: -600px;
-    margin-top: -140px;
-    transition: .4s;
-}
-
-
-
-
-
-.material-icons{
-    cursor: pointer;
-    color: white;
-    position: absolute;
-    margin-top: 600px;
-    font-size: 50px;
-}
-
-/*INICIO DAS CLASSES DO FOOTER*/
-.map-info {
-    display: grid;
-    grid-template-columns: 953px 950px;
-    height: 110vh;
-    background-color: #222;
-}
-
-.mapa {
-    margin-left: 250px;
-    margin-top: 50px;
-}
-
-.flex {
-    margin-left: 250px;
-    margin-top: 50px;
+.pwid{
     display: flex;
-    align-items: center;
+    justify-content: center;
+    width: 1900px;
+    
+        
+    
 }
 
-.flex-sub {
-    margin-left: 250px;
-    margin-top: 20px;
-    display: flex;
-    align-items: center;
-}
-
-.format {
-    margin-left: 15px;
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 18px;
-    line-height: 28px;
-    display: flex;
-    align-items: center;
-    letter-spacing: -0.02em;
-    color: #FFFFFF;
-}
-
-.info-foot {
-    display: grid;
-    grid-template-columns: 700px 570px 633px;
-    bottom: 0;
-    height: 340px;
-    background: #181818;
-}
-
-.form {
-    margin-top: 40px;
-    margin-left: 250px;
-}
-
-input,
-textarea {
+.Folha{
     margin-top: 15px;
-    width: 614px;
-    height: 70px;
-    background-color: rgba(216, 191, 216, 0);
-    border-style: solid;
-    border: 2px solid rgb(255, 255, 255);
-    outline: 0;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 18px;
-    line-height: 28px;
-    letter-spacing: -0.02em;
-    color: #FFFFFF;
-}
-
-input::placeholder {
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 18px;
-    line-height: 28px;
-    letter-spacing: -0.02em;
-    color: #FFFFFF;
-}
-
-textarea {
-    height: 192px;
-}
-
-textarea::placeholder {
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 18px;
-    line-height: 28px;
-    letter-spacing: -0.02em;
-    color: #FFFFFF;
-}
-
-.button-envio {
-    margin-top: 15px;
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 17px;
-    line-height: 28px;
-    width: 622px;
-    height: 49px;
-    color: white;
-    border-style: solid;
-    border: 2px solid rgb(255, 255, 255);
-    background-color: transparent;
-    transition: .4s;
-}
-.button-envio:hover{
-    color: black;
-    background-color: white;
-}
-
-
-
-.tex-foot {
-    margin-left: 220px;
-    margin-top: 20px;
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 28px;
-    letter-spacing: -0.02em;
-    color: #FFFFFF;
-}
-
-.tex-foot-2 {
-    margin-left: 90px;
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 28px;
-    letter-spacing: -0.02em;
-    color: #FFFFFF;
-}
-
-.title-hor {
-    margin-left: 90px;
-    margin-top: 50px;
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 16px;
-    line-height: 28px;
-    letter-spacing: -0.02em;
-    color: #FFFFFF;
-}
-
-.logo-foot {
-    margin-left: 220px;
-    margin-top: 50px;
-}
-
-.footer-icons {
-    margin-top: 20px;
-    margin-left: 130px;
+    margin-bottom: 50px;
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:flex-start;
+    background-color:rgb(59, 59, 59) ;
+    color:rgb(255, 255, 255);
+    width: 1100px;
+    height: 300px;
+    padding: 10px;
+    box-shadow: rgb(10, 15, 20) 0px 20px 30px -10px;
 }
 
-.icon-foot {
-    margin-right: 25px;
+.ThisIMG{
+    margin-top: 60px;
+    color: none;
+    transition: all .2s ease-in-out;
+}
+.ThisIMG:hover{
+    opacity: 0.5;
+    
 }
 
-hr {
-    margin-right: 250px;
-    border-top: 0.1px;
-    width: 1450px;
-    opacity: 40%;
+.as{
+    width: 1100px;
+    display: flex;
+    flex-direction:row;
+    justify-content:space-between;
+    font-size: 60px;
+    
 }
-/*FIM DAS CLASSES DO FOOTER*/
+
+.fa {
+    
+    color: rgb(14, 13, 13);
+   
+    transition: all .4s ease-in-out;
+}
+.fa:hover{
+    color: rgba(14, 13, 13, 0.836);
+}
+
+.fa-github-alt{
+    
+    
+    color: rgb(14, 13, 13);
+}
+
+.fa-linkedin{
+    color: rgb(14, 13, 13);
+    margin-left: 10px;
+}
+
+button{
+    border: none;
+    border-radius: 2px;
+}
+
+
+
+@media only screen and (max-width: 1024px) and (min-width: 200px) {
+    .img {
+        width: 200px;
+        height: 200px;
+        
+    }
+
+    .about{ flex-direction: column; align-items: center;}
+
+    .Folha{
+        width: 330px;
+        height: 360px;
+    }
+
+    .imgPad{
+        width: 400px;
+        height: 120px;
+    }
+    .as{
+        width: 220px;
+        font-size: 40px;
+    }
+    
+    .ThisIMG{
+        width: 70px;
+        height: 70px;
+        margin-top: 60px;
+        margin-bottom: 50px;
+    }
+
+    .Font{
+        font-size: 60px;
+        margin-top: 60px;
+        margin-bottom: 50px;
+        
+    }
+
+
+}
+
