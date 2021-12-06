@@ -1,0 +1,390 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@700&display=swap');
+
+html{
+    scroll-behavior: smooth;
+    -webkit-scroll-behavior: smooth;
+}
+
+body{
+    
+    background-color: rgb(24, 23, 23);
+}
+body, ul, li, p {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    font-size: 1.2rem;
+    font-family: 'PT Sans', sans-serif;
+    
+}
+
+body::-webkit-scrollbar {
+    width: 18px;               /* width of the entire scrollbar */
+  }
+  
+  body::-webkit-scrollbar-track {
+    background: rgb(39, 38, 37);        /* color of the tracking area */
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background-color: rgb(15, 15, 15);    /* color of the scroll thumb */
+         /* roundness of the scroll thumb */
+    
+  }
+
+
+ 
+
+
+a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+nav .botao{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5px;
+    margin-right: 8px;
+    height: 40px ;
+    width: 50px;
+    background-color: rgb(233, 233, 233);
+}
+
+nav .botaodark{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5px;
+    height: 40px ;
+    width: 50px;
+    background-color: rgb(63, 63, 63);
+}
+
+
+.header{
+    position: sticky;
+    top: 0;
+    background: rgba(44, 44, 44, 0.829); /*cor que torna a barra transparente*/
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    /*box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%);*/
+    -webkit-backdrop-filter: blur( 10.0px );
+    -moz-backdrop-filter: blur( 10.0px );
+    -ms-backdrop-filter: blur( 10.0px );
+    -o-backdrop-filter: blur( 10.0px );
+    backdrop-filter: blur( 20.0px );
+    overflow: hidden;
+    height: 22px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+
+.menuS{
+    display: flex;
+   
+}
+
+.menuS, li {
+     
+    margin-left: 10px;
+}
+
+.menuS li a {
+    
+    display: block;
+    padding: 10px;
+
+}
+.tm-social-icon {
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+}
+
+.active{
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+}
+
+.activeMenu{
+    background: rgba(255, 255, 255, 0.829);
+    backdrop-filter: blur( 20.0px);
+}
+
+.activeMenuItem{
+    color: black;
+}
+
+.Title {
+font-size: calc(0.9em + 1vw);
+
+color: whitesmoke;
+display: flex;
+justify-content: center;
+
+}
+
+.texbouttA{
+    color: white;
+    padding: 20px;
+}
+
+.about{
+   color: rgb(255, 255, 255);  
+   background: rgb(0,0,0);
+   background: rgb(0,0,0);
+   background: rgb(0,0,0);
+   background: rgb(0,0,0);
+   background: radial-gradient(circle, rgba(0,0,0,0.7595413165266106) 0%, rgba(52,52,52,1) 89%);    
+    border-radius: 7px;
+    width: 1740px;
+    height: 460px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    padding: 20px;
+    transition: 0.4s;
+}
+
+
+.textAbout{
+    padding: 9px;
+    
+    
+}
+
+.center{
+    
+    display: flex;
+    justify-content: center;
+}
+
+/*.bg_video{
+    
+	position: fixed; 
+	right: 0; 
+	bottom: 0;
+	min-width: 100%; 
+	min-height: 100%;
+	width: auto; 
+	height: auto; 
+	z-index: -1000;
+	background: url(images/torre.jpg) no-repeat;
+	background-size: cover; 
+}
+*/
+
+.textStart{
+    font-size: calc(0.3em + 1vw);
+    padding: 20px;
+    color: white;
+}
+
+.SocialIcon {
+    font-size: 60px;
+    background-color:rgb(59, 59, 59) ;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    transition: all .4s ease-in-out;
+}
+
+
+.socialStyle{
+    margin-top: 40px;
+    margin-bottom: 10px;
+    transition: all .4s ease-in-out;
+
+}
+
+.socialStyle:hover{
+    opacity: 0.5;
+}
+
+.mTOP{
+    color: cornflowerblue;
+    margin-top: 15px;
+    font-size: calc(0.5em + 1vw);
+}
+.Font{
+    font-size: 80px;
+    margin-top: 60px;
+    
+    transition: all .2s ease-in-out;
+}
+.Font:hover{
+    opacity: 0.5;
+    
+}
+.izq{
+    
+    font-size: calc(0.3em + 1vw);
+}
+.izq2{
+    color: darkkhaki;
+    font-size: calc(0.2em + 1vw); 
+}
+.clasEgi{
+    padding-top: 15px;
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    color: azure;
+    font-size: clamp(1em, 1em + 1vw, 8em);
+}
+
+.Text2{
+    padding-top: 15px;
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    color: azure;
+    font-size: clamp(1em, 1em + 1vw, 8em);
+}
+
+
+.img {
+    width: 400px;
+    height: 400px;
+    
+  
+}
+
+.imgPad{
+    box-shadow: 0 1px 4px rgb(218, 108, 212);
+    border-radius: 5px;
+    max-width: 80%;
+    max-height: 30%;
+  
+}
+
+.imgPadB{
+    box-shadow: 0 1px 4px rgb(218, 108, 212);
+    border-radius: 5px;
+    
+    max-width: 80%;
+    max-height: 30%;
+    
+}
+
+.portPosition{
+   
+    display: flex;
+    justify-content: center;
+}
+
+.pwid{
+    display: flex;
+    justify-content: center;
+    width: 1900px;
+    
+        
+    
+}
+
+.Folha{
+    margin-top: 15px;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:flex-start;
+    background-color:rgb(59, 59, 59) ;
+    color:rgb(255, 255, 255);
+    width: 1100px;
+    height: 300px;
+    padding: 10px;
+    box-shadow: rgb(10, 15, 20) 0px 20px 30px -10px;
+}
+
+.ThisIMG{
+    margin-top: 60px;
+    color: none;
+    transition: all .2s ease-in-out;
+}
+.ThisIMG:hover{
+    opacity: 0.5;
+    
+}
+
+.as{
+    width: 1100px;
+    display: flex;
+    flex-direction:row;
+    justify-content:space-between;
+    font-size: 60px;
+    
+}
+
+.fa {
+    
+    color: rgb(14, 13, 13);
+   
+    transition: all .4s ease-in-out;
+}
+.fa:hover{
+    color: rgba(14, 13, 13, 0.836);
+}
+
+.fa-github-alt{
+    
+    
+    color: rgb(14, 13, 13);
+}
+
+.fa-linkedin{
+    color: rgb(14, 13, 13);
+    margin-left: 10px;
+}
+
+button{
+    border: none;
+    border-radius: 2px;
+}
+
+
+
+@media only screen and (max-width: 1024px) and (min-width: 200px) {
+    .img {
+        width: 200px;
+        height: 200px;
+        
+    }
+
+    .about{ flex-direction: column; align-items: center;}
+
+    .Folha{
+        width: 330px;
+        height: 360px;
+    }
+
+    .imgPad{
+        width: 400px;
+        height: 120px;
+    }
+    .as{
+        width: 220px;
+        font-size: 40px;
+    }
+    
+    .ThisIMG{
+        width: 70px;
+        height: 70px;
+        margin-top: 60px;
+        margin-bottom: 50px;
+    }
+
+    .Font{
+        font-size: 60px;
+        margin-top: 60px;
+        margin-bottom: 50px;
+        
+    }
+
+
+}
+
