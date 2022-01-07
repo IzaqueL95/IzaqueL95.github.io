@@ -28,7 +28,7 @@ ws.onmessage = (event) => {
 
     var resultsPerc = (perc / howMany - 1) * 100
 
-    porc.innerText = '+' + resultsPerc.toFixed(2) + ' %'
+    porc.innerText = resultsPerc.toFixed(2) + ' %'
 
 
     howManyInner.innerText = howIs.toFixed(2)
@@ -38,7 +38,7 @@ ws.onmessage = (event) => {
 
     btcPerc.innerText = btcResultPerc.toFixed(2) + ' %'
 
-    perc > howMany ? porc.classList.add("colorG") : false
-    btcResultPerc < results ? btcPerc.classList.add("colorR") : false
+    perc > howMany ? porc.classList.add("colorG") : porc.classList.add("colorR")
+    howManyInner < results ? btcPerc.classList.add("colorR") : btcPerc.classList.add("colorG")
 
 }
