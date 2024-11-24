@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 title: "Teste"
 date: 2024-11-23
 categories: programação experimentos
