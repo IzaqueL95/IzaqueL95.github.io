@@ -2,5 +2,16 @@
 layout: default
 title: "Bem-vindo ao meu blog"
 ---
+
 # Bem-vindo ao meu blog!
-Este é um blog simples usando o tema Midnight. Explore os posts para saber mais.
+
+Aqui estão os últimos posts publicados:
+
+<ul>
+  {% for post in site.posts %}
+    <li>
+      <a href="{{ post.url }}">{{ post.title }}</a> <br>
+      <small>{{ post.date | date: "%d de %B de %Y" }}</small>
+    </li>
+  {% endfor %}
+</ul>
