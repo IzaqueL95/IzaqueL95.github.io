@@ -20,7 +20,7 @@ Escolhi o Telegram por sua API acessível e flexível. Diferentemente do WhatsAp
 
 ## Como ficou
 
-<img src="https://raw.githubusercontent.com/IzaqueL95/IzaqueL95.github.io/refs/heads/master/assets/img/telegram.jpeg" alt="Descrição da Imagem" width="280" height="560">
+<img src="https://raw.githubusercontent.com/IzaqueL95/IzaqueL95.github.io/refs/heads/master/assets/img/telegram.jpeg" alt="Descrição da Imagem" style="max-width: 30%; height: auto;margin-left:30%">
 
 _*O conteúdo da imagem acima foi extraído da minha agenda do Google. No entanto, criei os eventos de exemplo para demonstrar o funcionamento sem expor minha agenda real.*_
 
@@ -63,9 +63,11 @@ _*Esse é apenas um trecho de construção da mensagem, o código como um todo �
 
 ## O bot
 
-<img src="https://raw.githubusercontent.com/IzaqueL95/IzaqueL95.github.io/refs/heads/master/assets/img/tlg.jpeg" alt="Descrição da Imagem" width="900" height="177">
+<img src="https://raw.githubusercontent.com/IzaqueL95/IzaqueL95.github.io/refs/heads/master/assets/img/tlg.jpeg" 
+     alt="Descrição da Imagem" 
+     style="max-width: 100%; height: auto;">
 
-# 
+<br>
 
 O bot tem uma foto do Homem de Ferro e funciona como uma conversa comum no Telegram. Ele permite consultar os compromissos do dia novamente ou apagá-los, caso eu não queira manter a conversa. A ideia é que o Jarvis envie os compromissos diariamente, cabendo a mim decidir mantê-los ou não.
 
