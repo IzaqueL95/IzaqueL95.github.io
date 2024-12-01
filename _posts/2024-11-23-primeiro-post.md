@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "Criei um bot no Telegram para organizar minha agenda (e ele tem nome!)"
+title: "Criei um bot que envia minha agenda do dia diretamente no Telegram, extraída do Google Agendas"
 date: 2024-12-01
 categories: programação experimentos
 ---
