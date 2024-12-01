@@ -20,7 +20,7 @@ Escolhi o Telegram por sua API acessível e flexível. Diferentemente do WhatsAp
 
 ## Como ficou
 
-<img src="/programação/experimentos/assets/img/telegram.jpeg" alt="Descrição da Imagem" width="280" height="560">
+<img src="../programação/experimentos/assets/img/telegram.jpeg" alt="Descrição da Imagem" width="280" height="560">
 
 _*O conteúdo da imagem acima foi extraído da minha agenda do Google. No entanto, criei os eventos de exemplo para demonstrar o funcionamento sem expor minha agenda real.*_
 
